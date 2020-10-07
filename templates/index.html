@@ -8,13 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Squada+One&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body style="text-align: center; background: #c94b4b;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4b134f, #c94b4b);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4b134f, #c94b4b); color: #fcfdff">
 
-	<h1>pH Scale Recognition by RGB Color</h1>
+	<h1 style="font-family: 'Squada One'; letter-spacing: 3px; word-spacing: 3px; padding-top: 5px; background-color: black; padding-bottom: 5px;">pH Scale Recognition by RGB Color</h1>
 
-	<form action= "{{url_for('second')}}" method="POST">
+	<form action= "{{url_for('second')}}" method="POST" style="margin: 2rem; padding-top: 50px;">
   
         <label class="sr-only" for="inlineFormInputName2">Name</label>
         <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Blue Scale" name="blue">
@@ -29,9 +32,9 @@
 
     </form>
 
-
-
-
+    <footer style="position: fixed; bottom: 20px; right: 0; left: 0; z-index: 1030;">
+    	Made in India with <span style="color: red;">♥</span> by <a href="https://github.com/ygarg704" style="color: white; text-decoration: underline;">Yash Garg</a> 
+    </footer>
 
 
 
